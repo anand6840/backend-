@@ -15,7 +15,7 @@ app.get("/", (req,res)=>{
 
 app.use(`/user`,userRouter)
 app.use(authentication)
-app.use(`/note`,todoRouter)
+app.use(`/`,todoRouter)
 
     app.listen(process.env.port, async() => {
         try{
