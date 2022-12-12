@@ -1,7 +1,7 @@
 const express = require("express");
 const { connection } = require("./config/db");
 const { authentication } = require("./middleware/authentication");
-const { todoRouter } = require("./routes/note.routes");
+const { todoRouter } = require("./routes/todo.routes");
 const { userRouter } = require("./routes/user.routes");
 require(`dotenv`).config();
 
